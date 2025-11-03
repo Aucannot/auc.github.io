@@ -1,0 +1,27 @@
+/* 全局字体优化 */
+body {
+  font-family: 'Helvetica Neue', 'PingFang SC', sans-serif;
+  line-height: 1.8;
+}
+
+/* 代码块美化 */
+.highlight {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航栏悬停效果 */
+.navbar .nav-link:hover {
+  color: #ff6b6b !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* 卡片阴影效果 */
+.post-card,
+.card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+}
