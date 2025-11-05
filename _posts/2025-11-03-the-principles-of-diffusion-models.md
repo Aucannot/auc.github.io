@@ -11,6 +11,9 @@ tags: [diffusion-models, reading-notes, generative-models]
 
 虽然我一向不喜欢从xxx原理开始介绍的书籍
 
+在开始阅读这一系列之前，你可以先看看3blue1brown的视频：[But how do AI images and videos actually work? &#124; Guest video by Welch Labs
+](https://youtu.be/iv-5mZ_9CPY?si=n8vbkBPiJDRM_YHl)
+
 关于diffusion model，同事曾推荐我以下的资料：
 
 - [Diffusion Models &#124; Paper Explanation &#124; Math Explained](https://www.youtube.com/watch?v=HoKDTa5jHvg&t=444s)
@@ -18,15 +21,19 @@ tags: [diffusion-models, reading-notes, generative-models]
 
 如果没有兴趣看完两个长视频，可以直接看第二个。
 
-我曾经看过一些科普文章和科普视频，基本都会说扩散模型（这里应当特指我熟悉的生图模型）的forward就是去噪。虽然我没办法从专业的角度上反驳，但我也能直觉上感觉这种说法单纯止步于“科普”程度。
-
 > Diffusion modeling begins by specifying a forward corruption process that gradually turns data into noise. 
 > This forward process links the data distribution to a simple noise distribution by defining a continuous family of intermediate distributions. 
 > The core objective of a diffusion model is to construct another process that runs in the opposite direction, transforming noise into data while recovering the same intermediate distributions defined by the forward corruption process.
 
-这里是论文中严谨地介绍，将去噪过程讲解为数据的分布的转换。
+> We describe three complementary ways to formalize this idea. 
 
-之所以专门提到这一点，是因为我最开始以为生图过程就是把一个噪声图逐渐去噪成一幅可读的图片，然而这种想法只是被“去噪”这一说法误导的结果，这让我忽略掉了“vae”。
+> **The variational view**, inspired by variational autoencoders, sees diffusion as learning to remove noise step by step, solving small denoising objectives that together teach the model to turn noise back into data. 
+
+> **The score-based view**, rooted in energy-based modeling, learns the gradient of the evolving data distribution, which indicates how to nudge samples toward more likely regions. 
+
+> **The flow-based view**, related to normalizing flows, treats generation as following a smooth path that moves samples from noise to data under a learned velocity field.
+
+我同样也不喜欢这样引用原文，但我没有自信比这说的更精准。
 
 
 ### 参考文献
