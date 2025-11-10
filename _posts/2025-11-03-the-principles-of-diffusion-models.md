@@ -31,7 +31,7 @@ tags: [diffusion-models, reading-notes, generative-models]
 
 在diffusion model的推理过程中，除了模型权重以外，会需要输入一些参数：prompt、num_inference_steps、guidance_scale、noise_seed等等。可以先玩玩文生图的工作流：[在线ComfyUI 体验Qwen Image文生图](https://bizyair.cn/community/models/publicity/37000)
 
-
+在`3Blue1Brown`的视频中，对diffusion model的推理过程有一个很好的概括：**时变的矢量场**
 
 ### 参考文献
 
