@@ -13,7 +13,7 @@ tags: [diffusion-models, reading-notes, generative-models]
 
 关于diffusion model，同事曾推荐我以下的资料：
 
-- [Diffusion Models &#124; Paper Explanation &#124; Math Explained](http s://www.youtube.com/watch?v=HoKDTa5jHvg&t=444s)
+- [Diffusion Models &#124; Paper Explanation &#124; Math Explained](https://www.youtube.com/watch?v=HoKDTa5jHvg&t=444s)
 - [Flow Matching &#124; Explanation + PyTorch Implementation](https://www.youtube.com/watch?v=7cMzfkWFWhI)
 
 同事说可以直接看第二个，但都是公式推导，我连那些基本的棍子符号都忘记是什么意思了，这个视频我打开过三次，看到公示就开始涣散了，我决定放过我自己，等我足够厉害了再回来看这个广受好评的视频。
